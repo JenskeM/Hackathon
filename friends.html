@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="basics.css" rel="stylesheet" />
+    <link href="styles_friends.css" rel="stylesheet" />
+    <title>Zotte Lotte - Friends</title>
+    <link rel="icon" href="Logo.jpg" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="container" id="top">
+      <header>
+        <nav>
+          <div class="tooltip">
+            <a href="index.html">
+              <img src="Home-icon.png" alt="Home button" />
+              <span class="tooltiptext_right">Go to the 'Home'-page</span>
+            </a>
+          </div>
+          <h1>Friends book</h1>
+          <div class="tooltip">
+            <a href="drawings.html">
+              <img src="pencil-icon.png" alt="Drawings button" />
+              <span class="tooltiptext_below"
+                >Go to the 'Coloring pages'-page</span
+              >
+            </a>
+          </div>
+          <div class="tooltip">
+            <a href="themes.html">
+              <img src="Party hat-icon.png" alt="Themes button" />
+              <span class="tooltiptext_below">Go to the 'Themes'-page</span>
+            </a>
+          </div>
+          <div class="tooltip">
+            <a href="friends.html">
+              <img src="Book-icon.png" alt="Friends book button" />
+              <span class="tooltiptext_below">This is where you are</span>
+            </a>
+          </div>
+          <div class="tooltip">
+            <a href="contact.html">
+              <img src="Call-icon.png" alt="Contact button" />
+              <span class="tooltiptext_left">Go to the 'Contact'-page</span>
+            </a>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <article>
+          <section>
+            <h1>Friends book</h1>
+            <p>
+              Zotte Lotte has been to a lot of parties already. In all those
+              parties she have made a lot of new friends. But Zotte Lotte is
+              sometimes a bit forgetful (she's getting old), so she can't
+              remember every child she has been to. That's why Zotte Lotte has
+              come up with a solution: she has made a friends book for herself!
+              Do you know what a friends book is? Maybe you have one yourself,
+              but in a friends book all of your friends are answering some
+              questions about themselves and add something fun for the owner of
+              the book. She answers all those questions herself as well. So you
+              all get to know a bit more about Zotte Lotte too! If you have
+              pictures made during the party with Zotte Lotte, she would love to
+              see them as well! You can upload them here as well. But before you
+              upload these pictures, please ask your mommy or daddy if it is
+              alright that these pictures are shown on social media. Of course
+              Zotte Lotte checks everything before she puts it online.
+              <br />
+              <br />
+              <b>So, do you want to write in Zotte Lotte's friends book?</b>
+            </p>
+          </section>
+          <form>
+            <h1>Questions</h1>
+            <div class="friendsbook">
+              <span class="dotscontainer">
+                <div class="dots1">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+                <h2>Name</h2>
+                <div class="dots2">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </span>
+              <div class="friendsbookbig">
+                <div class="zlfav textcenter">
+                  <p>
+                    You all know Zotte Lotte her name. Of course Zotte Lotte
+                    wants to know the names of all of her friends as well.
+                    <br />So please help her out by telling yours!
+                  </p>
+                </div>
+                <div class="inpfav">
+                  <label for="inp_name">Enter your name</label>
+                  <input type="text" id="inp_name" name="name" />
+                </div>
+              </div>
+              <span class="dotscontainer">
+                <div class="dots1">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+                <h2>Picture</h2>
+                <div class="dots2">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </span>
+              <div class="friendsbookbig">
+                <div class="zlfav textcenter">
+                  <p>
+                    Zotte Lotte loves to know besides your name, how you look.
+                    That will certainly refreshes her memory. <br />
+                    So ONLY if your mommy or daddy agrees, then you can upload
+                    your picture here.
+                    <br />
+                    <span class="picture"
+                      >It is assured that Zotte Lotte will NOT put this picture
+                      on social media!</span
+                    >
+                  </p>
+                </div>
+                <div class="inpfav" id="inppic">
+                  <label for="inp_pic">Click on the button to upload</label>
+                  <input
+                    type="file"
+                    id="inp_pic"
+                    name="picture"
+                    accept="image/*"
+                  />
+                  <br />
+                  <span
+                    >Of course shares Zotte Lotte a picture of herself as
+                    well:</span
+                  >
+                  <img
+                    src="ZotteLottePicture.jpg"
+                    alt="Picture of Zotte Lotte"
+                  />
+                </div>
+              </div>
+              <span class="dotscontainer">
+                <div class="dots1">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+                <h2>Age</h2>
+                <div class="dots2">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </span>
+              <div class="friendsbookbig" id="agecontainer">
+                <div class="zlfav">
+                  <p>
+                    Zotte Lotte her age is... Hmm well let we just say she had
+                    many birthdays already. <br />
+                    <span id="secretage"
+                      >(Between you and me, compared to you Zotte Lotte is
+                      <b>OLD</b>... <br />
+                      but sssst don't tell her that!)</span
+                    >
+                    <br /><br />
+                    But Zotte Lotte is very snoop about yours. Do you want to
+                    tell her how old you are?
+                  </p>
+                </div>
+                <div class="inpfav">
+                  <label for="inp_age">Enter your current age</label>
+                  <input type="number" id="inp_age" name="age" max="15" />
+                </div>
+                <div class="zlfav">
+                  <p>
+                    She is curious though. How old do YOU think Zotte Lotte is?
+                  </p>
+                </div>
+                <div class="inpfav">
+                  <label for="inp_ageZL">Enter the age of Zotte Lotte</label>
+                  <input type="number" id="inp_ageZL" name="age" />
+                </div>
+              </div>
+              <span class="dotscontainer">
+                <div class="dots1">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+                <h2>Favorite color</h2>
+                <div class="dots2">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </span>
+              <div class="friendsbookbig">
+                <div class="zlfav textcenter" id="favcolor">
+                  <p>
+                    Zotte Lotte her favorite color is
+                    <b><span style="color: #fc6203">orange</span></b
+                    >. <br />
+                    What is your favorite color?
+                  </p>
+                </div>
+                <div class="inpfav">
+                  <label for="inp_color"
+                    >Click on the button to choose yours</label
+                  >
+                  <input
+                    type="color"
+                    id="inp_color"
+                    name="color"
+                    value="#fc6203"
+                  />
+                </div>
+              </div>
+              <span class="dotscontainer">
+                <div class="dots1">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+                <h2>Favorite animal</h2>
+                <div class="dots2">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </span>
+              <div class="friendsbookbig">
+                <div class="zlfav textcenter">
+                  <div class="favanimal">
+                    <div class="imgdolphin">
+                      <a href="Dolphin.jpg" target="_blank"
+                        ><img src="Dolphin.jpg" alt="Picture of a dolphin" />
+                      </a>
+                    </div>
+                    <div class="textanimal">
+                      Zotte Lotte her favorite animal is a dolphin.<br />
+                      What is yours favorite animal?
+                    </div>
+                  </div>
+                </div>
+                <div class="inpfav">
+                  <label for="inp_animal"
+                    >Enter your favorite in the field</label
+                  >
+                  <input type="text" id="inp_animal" name="animal" />
+                </div>
+              </div>
+              <span class="dotscontainer">
+                <div class="dots1">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+                <h2>Favorite music</h2>
+                <div class="dots2">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </span>
+              <div class="friendsbookbig">
+                <div class="zlfav textcenter">
+                  <p>
+                    Zotte Lotte likes to use music in her shows. She has her own
+                    <a href="index.html">song</a>. But besides that song, she
+                    has a couple of songs she really likes. Her favorite one is
+                    'De vloer is lava'. Which one do you like the best?
+                  </p>
+                </div>
+                <div class="inpfav" id="inpmusic">
+                  <label for="inp_music"
+                    >Click on the button underneath the player</label
+                  >
+                  <audio controls>
+                    <source
+                      src="DJ Maurice Ft Snollebollekes - De Vloer Is Lava.mp3"
+                      type="audio/mp3"
+                    />
+                    Your browser does not support the audio element.
+                  </audio>
+                  <span class="musiclabel">
+                    <input type="radio" id="inp_snol" name="music" />
+                    <label for="inp_snol">De vloer is lava</label>
+                  </span>
+                  <audio controls>
+                    <source
+                      src="Kinderen voor Kinderen - Bewegen is Gezond.mp3"
+                      type="audio/mp3"
+                    />
+                    Your browser does not support the audio element.
+                  </audio>
+                  <span class="musiclabel">
+                    <input type="radio" id="inp_kvk" name="music" />
+                    <label for="inp_kvk">Bewegen is gezond</label>
+                  </span>
+                  <audio controls>
+                    <source src="K3 - Mango Mango.mp3" type="audio/mp3" />
+                    Your browser does not support the audio element.
+                  </audio>
+                  <span class="musiclabel">
+                    <input type="radio" id="inp_k3" name="music" />
+                    <label for="inp_k3">Mango Mango</label>
+                  </span>
+                </div>
+              </div>
+              <span class="dotscontainer">
+                <div class="dots1">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+                <h2>Messy</h2>
+                <div class="dots2">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </span>
+              <div class="friendsbookbig">
+                <div class="zlfav textcenter">
+                  <p>
+                    Confettie Karel, the boyfriend of Zotte Lotte sometimes
+                    complains that she is a bit messy. But yeah, Zotte Lotte
+                    isn't really the tidy type. A bit of cloths there, a bit of
+                    party stuff over there... Does that sounds familiar? How
+                    messy are you?
+                  </p>
+                </div>
+                <div class="inpfav">
+                  <label for="inp_messy"
+                    >Put the dot at how messy you are</label
+                  >
+                  <input type="range" id="inp_messy" name="messy" />
+                </div>
+              </div>
+              <span class="dotscontainer">
+                <div class="dots1">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+                <h2>Least favorite food</h2>
+                <div class="dots2">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </span>
+              <div class="friendsbookbig">
+                <div class="zlfav textcenter">
+                  <p>
+                    Zotte Lotte likes to bake cookies... but she truly
+                    <b>LOVES</b> eating them. However, there is one thing she
+                    really doesn't like to eat: red cabbage. What of the
+                    following dishes you really dislike?
+                  </p>
+                </div>
+                <div class="inpfav" id="inpfood">
+                  <label for="inp_food"
+                    >Click on the dish you dislike the most</label
+                  >
+                  <br />
+                  <span id="buttonfood">
+                    <input
+                      type="button"
+                      id="inp_broc"
+                      name="food"
+                      value="Broccoli"
+                    />
+                    <input
+                      type="button"
+                      id="inp_sprouts"
+                      name="food"
+                      value="Brussels sprouts"
+                    />
+                    <input
+                      type="button"
+                      id="inp_chicory"
+                      name="food"
+                      value="Chicory"
+                    />
+                    <input
+                      type="button"
+                      id="inp_cabbage"
+                      name="food"
+                      value="Red cabbage"
+                    />
+                  </span>
+                </div>
+              </div>
+              <span class="dotscontainer">
+                <div class="dots1">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+                <h2>Motto</h2>
+                <div class="dots2">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </span>
+              <div class="friendsbookbig">
+                <div class="zlfav textcenter">
+                  <p>
+                    Do you ever heard of the word 'motto'? It's a phrase that
+                    reflects a believe. The most famous one is probably 'Hakuna
+                    Matata' from the Lion King. Zotte Lotte also has her own
+                    motto:
+                    <span class="textitalic"
+                      >'Life is just one big party!'
+                    </span>
+                    <br />
+                    Do you have a motto? Zotte Lotte is very curious!
+                  </p>
+                </div>
+                <div class="inpfav">
+                  <label for="inp_motto">If applicable, enter your motto</label>
+                  <input type="text" id="inp_motto" name="motto" />
+                </div>
+              </div>
+              <span class="dotscontainer">
+                <div class="dots1">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+                <h2>Pictures party</h2>
+                <div class="dots2">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </span>
+              <div class="friendsbookbig">
+                <div class="zlfav textcenter">
+                  <p>
+                    If you have pictures of Zotte Lotte at your party, Zotte
+                    Lotte would love to receive those! <b>ONLY</b> if your mommy
+                    or daddy agrees, then you can upload your
+                    fun/amazing/beautiful pictures here.
+                    <br />
+                    <span class="picture"
+                      >Reminder: these pictures might be used on the social
+                      media of Zotte Lotte!</span
+                    >
+                  </p>
+                </div>
+                <div class="inpfav" id="inppicZL">
+                  <label for="inp_pic"
+                    >Click on the button to upload <br />
+                    You can choose multiple <br />
+                    Select all the files you want to send at once</label
+                  >
+                  <input
+                    type="file"
+                    id="inp_picZL1"
+                    name="picture"
+                    accept="image/*"
+                    multiple
+                  />
+                </div>
+              </div>
+              <span class="dotscontainer">
+                <div class="dots1">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+                <h2>Wish</h2>
+                <div class="dots2">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </span>
+              <div class="friendsbookbig">
+                <div class="zlfav">
+                  <p>
+                    Last but not least, Zotte Lotte has a wish for you:
+                    <br />
+                    <br />
+                    <span class="textitalic"
+                      >She wants you to have lots and lots of
+                      <b>amazing</b> birthday parties!
+                    </span>
+                    <br /><br />
+                    Is there maybe something you want to say to Zotte Lotte as
+                    well?
+                  </p>
+                </div>
+                <div class="inpfav">
+                  <textarea
+                    id="inp_wish"
+                    cols="40"
+                    rows="5"
+                    placeholder="Enter your wish for Zotte Lotte here..."
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <input
+              id="bttsend"
+              type="submit"
+              value="Send"
+              onclick="alert('Jeeeh, you have written in the friends book of Zotte Lotte! Zotte Lotte thanks you!')"
+            />
+          </form>
+        </article>
+        <div class="buttontop">
+          <a href="#top"><img id="topicon" src="Up-icon.png" /></a>
+        </div>
+      </main>
+      <footer>
+        <div class="logo">
+          <a href="https://www.zottelotte.com" target="_blank">
+            <img src="Logo.jpg" alt="Logo" />
+          </a>
+        </div>
+        <p>&copy; 2022 zottelotte.com</p>
+        <div class="tooltip">
+          <a
+            href="https://www.facebook.com/zottekinderentertainment/"
+            target="_blank"
+          >
+            <img src="Facebook.png" alt="Facebook button" />
+            <span class="tooltiptext_top">Go to Facebook</span>
+          </a>
+        </div>
+        <div class="tooltip">
+          <a href="https://www.instagram.com/zottelotte/?hl=nl" target="_blank">
+            <img src="Instagram.png" alt="Instagram button" />
+            <span class="tooltiptext_top" id="tooltip_insta"
+              >Go to Instagram</span
+            >
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

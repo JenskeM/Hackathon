@@ -1,0 +1,346 @@
+.pictures {
+  margin: 2rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.pictures img {
+  border-radius: 5%;
+  box-shadow: 5px 8px 10px #155d59;
+}
+
+#pic1 {
+  width: 6.2rem;
+  transform: rotate(20deg);
+  border: 0.2rem solid #fc6203;
+}
+
+#pic2 {
+  margin-left: -0.5rem;
+  width: 6.5rem;
+  border: 0.4rem solid #01d9ff;
+}
+
+#pic3 {
+  margin-top: 1rem;
+  margin-left: -0.5rem;
+  width: 5.4rem;
+  transform: rotate(-20deg);
+  border: 0.2rem solid #f06ea9;
+}
+
+#pic4,
+#pic5 {
+  width: 0;
+  visibility: hidden;
+}
+
+.contactform {
+  margin: 2rem 0.5rem;
+  display: grid;
+  row-gap: 0.5rem;
+  justify-content: stretch;
+  grid-template-columns: 2fr 5fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1f 1f 3fr;
+}
+
+.contactform input {
+  padding-left: 0.3rem;
+  font-family: "Farsan", "Arial";
+  font-size: 1rem;
+  border: 0.15rem solid #34c2ba;
+  border-radius: 0.3rem;
+}
+
+.contactform input:focus {
+  outline: none;
+  border: 0.3rem solid #fc6203;
+}
+
+.contactform label {
+  align-self: center;
+  justify-self: end;
+  padding-right: 0.5rem;
+}
+
+.contact_checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+::-webkit-calendar-picker-indicator {
+  background-color: #34c2ba;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+input[type="date"] {
+  width: 6rem;
+}
+
+input[type="checkbox"] {
+  accent-color: #fc6203;
+  outline: #fc6203;
+}
+
+textarea {
+  resize: none;
+  padding-left: 0.3rem;
+  font-family: "Farsan", "Arial";
+  font-size: 1rem;
+  border: 0.15em solid #34c2ba;
+  border-radius: 0.3rem;
+}
+
+textarea:focus {
+  outline: none !important;
+  border-color: #fc6203;
+}
+
+input[type="submit"] {
+  background-color: #34c2ba;
+  color: #155d59;
+  padding: 0.5rem 1rem;
+  font-family: "Grape Nuts", "Arial";
+  font-size: 1rem;
+  font-weight: bold;
+  border: 0.15em solid #155d59;
+  border-radius: 0.3rem;
+  box-shadow: 5px 8px 10px #155d59;
+  cursor: pointer;
+}
+
+input#bttsend:hover {
+  background-color: #fc6203;
+  color: white;
+  border: 0.15em solid white;
+}
+
+@media screen and (min-width: 1024px) {
+  .pictures {
+    margin: 3rem 0;
+  }
+
+  .pictures img {
+    border-radius: 10%;
+    box-shadow: 5px 8px 10px #155d59;
+  }
+
+  #pic1 {
+    width: 10rem;
+    border: 0.5rem solid #fc6203;
+  }
+
+  #pic2 {
+    width: 10.5rem;
+    border: 0.7rem solid #01d9ff;
+  }
+
+  #pic3 {
+    width: 9.5rem;
+    border: 0.3rem solid #f06ea9;
+  }
+
+  #pic4 {
+    margin-top: -0.5rem;
+    width: 10.4rem;
+    transform: rotate(-50deg);
+    border: 0.4rem solid #4acf6e;
+    visibility: visible;
+  }
+
+  #pic5 {
+    margin-top: -1rem;
+    margin-left: -0.5rem;
+    width: 10.6rem;
+    transform: rotate(5deg);
+    border: 0.5rem solid #ffd417;
+    visibility: visible;
+  }
+
+  .contactform label {
+    margin-left: 1rem;
+    align-self: center;
+    justify-self: left;
+    padding-left: 0.5rem;
+  }
+
+  .contactform input {
+    margin: 0 1rem 0.5rem 1rem;
+    font-size: 1.2rem;
+    border: 0.2em solid #34c2ba;
+    border-radius: 0.5rem;
+  }
+
+  .contactform {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1f; /* 1fr 3fr;*/
+    grid-template-areas:
+      "firstlb . . lastlb . . "
+      "firstinp firstinp firstinp lastinp lastinp lastinp"
+      "emaillb . phonelb . citylb ."
+      "emailinp emailinp phoneinp phoneinp cityinp cityinp"
+      "datelb  . contactlb . . .  "
+      "dateinp dateinp  contactinp contactinp . ."
+      "messagelb . . . . ."
+      "messageinp messageinp messageinp messageinp messageinp messageinp";
+  }
+
+  #lblfirst {
+    grid-area: firstlb;
+  }
+
+  #inp_firstname {
+    grid-area: firstinp;
+  }
+
+  #lbllast {
+    grid-area: lastlb;
+  }
+
+  #inp_lastname {
+    grid-area: lastinp;
+  }
+
+  #lblemail {
+    grid-area: emaillb;
+  }
+
+  #inp_email {
+    grid-area: emailinp;
+  }
+
+  #lblphone {
+    grid-area: phonelb;
+  }
+
+  #inp_phone {
+    grid-area: phoneinp;
+  }
+
+  #lblcity {
+    grid-area: citylb;
+  }
+
+  #inp_city {
+    grid-area: cityinp;
+  }
+
+  #lbldate {
+    grid-area: datelb;
+  }
+
+  #inp_date {
+    grid-area: dateinp;
+  }
+
+  #lblcontact {
+    grid-area: contactlb;
+  }
+
+  .contact_checkbox {
+    grid-area: contactinp;
+    margin-left: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr;
+  }
+
+  #lblmess {
+    grid-area: messagelb;
+  }
+
+  #inp_mess {
+    grid-area: messageinp;
+    height: 9rem;
+  }
+
+  .contact_checkboxbig {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-areas: "check label";
+  }
+
+  #inp_check1 {
+    grid-area: check;
+    margin: 0;
+  }
+
+  #lblcheck1 {
+    grid-area: label;
+    margin-left: 0rem;
+    justify-self: start;
+    padding-left: 0.5rem;
+  }
+
+  #inp_check2 {
+    grid-area: check;
+    margin: 0;
+  }
+
+  #lblcheck2 {
+    grid-area: label;
+    margin-left: 0rem;
+    justify-self: start;
+    padding-left: 0.5rem;
+  }
+
+  textarea {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    border: 0.2em solid #34c2ba;
+    border-radius: 0.5rem;
+  }
+
+  input[type="date"] {
+    width: 7rem;
+  }
+
+  input[type="checkbox"] {
+    transform: scale(1.3);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .pictures {
+    margin: 4rem 0;
+  }
+
+  #pic1 {
+    width: 13rem;
+  }
+
+  #pic2 {
+    width: 13.5rem;
+  }
+
+  #pic3 {
+    width: 11.5rem;
+  }
+
+  #pic4 {
+    width: 13.4rem;
+  }
+
+  #pic5 {
+    width: 13.6rem;
+  }
+
+  .contactform input {
+    font-size: 1.4rem;
+  }
+
+  textarea {
+    font-size: 1.4rem;
+  }
+
+  input[type="date"] {
+    width: 8.5rem;
+  }
+
+  input[type="submit"] {
+    transform: scale(1.3);
+  }
+}

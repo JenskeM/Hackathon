@@ -1,0 +1,434 @@
+form {
+  margin-top: 2rem;
+}
+
+h2 {
+  padding: 0.2rem 0;
+  background-color: rgba(52, 194, 186, 0.5);
+  border-radius: 5rem;
+}
+
+main p {
+  margin: 0;
+}
+
+.textitalic {
+  font-style: italic;
+}
+
+.friendsbook {
+  display: grid;
+  row-gap: 0.8rem;
+  justify-content: center;
+}
+
+.friendsbookbig {
+  display: grid;
+  row-gap: 0.8rem;
+}
+
+.inpfav {
+  font-style: italic;
+  font-size: 0.8rem;
+  column-gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.picture {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+/* Width  image=612px --> 10rem
+   Height image=408px -->  */
+.favanimal {
+  height: 6.66rem;
+}
+
+.imgdolphin img {
+  opacity: 70%;
+  width: 10rem;
+  transform: translate(-40%, 0%);
+  border-radius: 5rem;
+}
+
+.textanimal {
+  transform: translate(70%, -200%);
+  width: 10rem;
+}
+
+input {
+  padding-left: 0.3rem;
+  font-family: "Farsan", "Arial";
+  font-size: 1rem;
+  border: 0.15em solid #34c2ba;
+  border-radius: 0.3rem;
+  accent-color: #fc6203;
+}
+
+input[type="file"] {
+  background-color: #34c2ba;
+  color: #155d59;
+  padding: 0.5rem;
+  font-family: "Grape Nuts", "Arial";
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: 0.15em solid #155d59;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+input[type="number"] {
+  width: 3rem;
+}
+
+input[type="color"] {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  border-radius: 0%;
+  padding: 0;
+}
+
+input[type="button"] {
+  background-color: #34c2ba;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: #fc6203;
+}
+
+input[type="button"]:focus {
+  background-color: #fc6203;
+}
+
+input[type="submit"] {
+  margin-top: 2rem;
+  background-color: #34c2ba;
+  color: #155d59;
+  padding: 0.5rem 1rem;
+  font-family: "Grape Nuts", "Arial";
+  font-size: 1rem;
+  font-weight: bold;
+  border: 0.15em solid #155d59;
+  border-radius: 0.3rem;
+  box-shadow: 5px 8px 10px #155d59;
+  cursor: pointer;
+}
+
+input#bttsend:hover {
+  background-color: #fc6203;
+  color: white;
+  border: 0.15em solid white;
+}
+
+textarea {
+  resize: none;
+  padding-left: 0.3rem;
+  font-family: "Farsan", "Arial";
+  font-size: 1rem;
+  border: 0.15em solid #34c2ba;
+  border-radius: 0.3rem;
+}
+
+audio {
+  margin-top: 0.5rem;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: white;
+}
+
+#secretage {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+#inppic {
+  display: grid;
+}
+
+#inppic img {
+  justify-self: center;
+  width: 50%;
+  border: 0.2rem solid #155d59;
+  border-radius: 2rem;
+}
+
+#inppicZL {
+  display: grid;
+}
+
+#inpfood {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+}
+
+#buttonfood {
+  display: flex;
+  justify-content: space-between;
+}
+
+#inpmusic {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
+  justify-items: center;
+}
+
+#inp_motto {
+  width: 15rem;
+}
+
+.dotscontainer {
+  display: grid;
+  justify-content: stretch;
+  grid-template-columns: 0fr 1fr 0fr;
+  grid-template-areas: "dots1 title dots2";
+}
+
+.dots1 {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.dotscontainer h2 {
+  grid-area: title;
+}
+
+.dots2 {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  grid-area: dots2;
+}
+
+.dot {
+  visibility: hidden;
+  height: 0.8rem;
+  width: 0.8rem;
+  background-color: #155d59;
+  border-radius: 50%;
+  align-self: center;
+}
+
+input:focus {
+  outline: none;
+  border: 0.3rem solid #fc6203;
+}
+
+textarea:focus {
+  outline: none !important;
+  border-color: #fc6203;
+}
+
+/* iPhone 6, 6S, 7, 8 and SE landscape */
+@media only screen and (max-device-height: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+  .textanimal {
+    transform: translate(170%, -200%);
+  }
+}
+
+/* Samsung Galaxy S8+ landscape */
+@media only screen and (max-device-height: 360px) and (max-device-width: 740px) and (orientation: landscape) {
+  .textanimal {
+    transform: translate(190%, -200%);
+  }
+}
+
+/* Most Common Mobile Screen Resolution Size Worldwide*/
+@media only screen and (device-height: 360px) and (device-width: 640px) and (orientation: landscape) {
+  .textanimal {
+    transform: translate(160%, -200%);
+  }
+}
+
+/* Most Common Tablet Screen Resolution Size Worldwide*/
+@media only screen and (device-width: 768px) and (device-height: 1024px) {
+  .textanimal {
+    transform: translate(190%, -200%);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main h2 {
+    margin: 1.5rem 0rem;
+    font-size: 1.3rem;
+  }
+
+  .friendsbookbig {
+    display: grid;
+    column-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "zl inp";
+    margin: 0 6rem;
+  }
+
+  .zvfav {
+    grid-area: zl;
+  }
+
+  .inpfav {
+    font-size: 1rem;
+    grid-area: inp;
+    display: grid;
+    align-content: center;
+    gap: 0;
+  }
+
+  input,
+  input[type="file"] {
+    font-size: 0.9rem;
+    align-self: center;
+    justify-self: center;
+    border-radius: 0.5rem;
+  }
+
+  input {
+    width: 20rem;
+  }
+
+  input[type="file"] {
+    width: fit-content;
+  }
+
+  input[type="button"] {
+    width: fit-content;
+  }
+
+  #agecontainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #favcolor {
+    transform: translate(30%, -15%);
+  }
+
+  /* Width  image=612px --> 12rem
+  Height image=408px -->  */
+  .favanimal {
+    height: 8rem;
+  }
+
+  .imgdolphin img {
+    width: 12rem;
+    transform: translate(0%, 0%);
+  }
+
+  .textanimal {
+    width: 13rem;
+  }
+
+  .musiclabel {
+    display: grid;
+    grid-template-columns: 1rem 1fr;
+  }
+
+  .musiclabel label {
+    margin-left: 1rem;
+  }
+
+  textarea,
+  #inp_motto {
+    border-radius: 0.5rem;
+    width: 20rem;
+  }
+
+  input[type="submit"] {
+    width: 5rem;
+  }
+
+  .dotscontainer {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+
+  .dot {
+    visibility: visible;
+  }
+
+  .textcenter {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .picture,
+  #secretage {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  main h2 {
+    margin: 1.8rem 0rem;
+    font-size: 1.5rem;
+  }
+
+  .inpfav {
+    font-size: 1.3rem;
+  }
+
+  input,
+  input[type="file"] {
+    font-size: 1rem;
+    width: 19rem;
+  }
+
+  input[type="button"] {
+    width: fit-content;
+  }
+
+  /* Width  image=612px --> 12rem
+  Height image=408px -->  */
+  .favanimal {
+    height: 9.33rem;
+  }
+
+  .imgdolphin img {
+    width: 14rem;
+    transform: translate(80%, 0%);
+  }
+
+  .textanimal {
+    width: 20rem;
+    transform: translate(110%, -200%);
+  }
+
+  audio {
+    transform: scale(1.3);
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  textarea,
+  #inp_motto {
+    width: 30rem;
+  }
+
+  input[type="button"],
+  textarea {
+    font-size: 1.3rem;
+  }
+
+  input[type="submit"] {
+    width: 7rem;
+    font-size: 1.3rem;
+  }
+
+  .picture,
+  #secretage {
+    font-size: 1.3rem;
+  }
+}

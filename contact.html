@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="basics.css" rel="stylesheet" />
+    <link href="styles_contact.css" rel="stylesheet" />
+    <title>Zotte Lotte - Contact</title>
+    <link rel="icon" href="Logo.jpg" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="container" id="top">
+      <header>
+        <nav>
+          <div class="tooltip">
+            <a href="index.html">
+              <img src="Home-icon.png" alt="Home button" />
+              <span class="tooltiptext_right">Go to the 'Home'-page</span>
+            </a>
+          </div>
+          <h1>Contact</h1>
+          <div class="tooltip">
+            <a href="drawings.html">
+              <img src="pencil-icon.png" alt="Drawings button" />
+              <span class="tooltiptext_below"
+                >Go to the 'Coloring pages'-page</span
+              >
+            </a>
+          </div>
+          <div class="tooltip">
+            <a href="themes.html">
+              <img src="Party hat-icon.png" alt="Themes button" />
+              <span class="tooltiptext_below">Go to the 'Themes'-page</span>
+            </a>
+          </div>
+          <div class="tooltip">
+            <a href="friends.html">
+              <img src="Book-icon.png" alt="Friends book button" />
+              <span class="tooltiptext_below"
+                >Go to the 'Friends book'-page</span
+              >
+            </a>
+          </div>
+          <div class="tooltip">
+            <a href="contact.html">
+              <img src="Call-icon.png" alt="Contact button" />
+              <span class="tooltiptext_left">This is where you are</span>
+            </a>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="pictures">
+          <img id="pic4" src="Contact 4.jpg" alt="Picture of Zotte Lotte" />
+          <img id="pic1" src="Contact 1.jpeg" alt="Picture of Zotte Lotte" />
+          <img id="pic2" src="Contact 2.jpg" alt="Picture of Zotte Lotte" />
+          <img id="pic3" src="Contact 3.jpg" alt="Picture of Zotte Lotte" />
+          <img id="pic5" src="Contact 5.jpg" alt="Picture of Zotte Lotte" />
+        </div>
+        <article>
+          <p>
+            Are you interested in a party made or entertained by Zotte Lotte?
+            <br />
+            Or do you have another question for her?
+            <br />In both cases, please fill in the contact form below (maybe
+            ask a adult to help you). Zotte Lotte will immediately receive your
+            message or question in her mailbox. She will answer you by calling
+            or by mail, whatever your preference is.
+            <br />
+            <br />
+            Oh, before Zotte Lotte forgets to mention it:
+            <br />
+            It is possible that the mails send by Zotte Lotte arrive in your
+            'spam-folder'. Check this regularly as well when you're waiting for
+            a mail from Zotte Lotte.
+            <br />
+            <br />
+            <b>Zotte Lotte is looking forward to your message!</b>
+          </p>
+        </article>
+        <form>
+          <div class="contactform">
+            <label for="inp_firstname" id="lblfirst">First name:</label>
+            <input type="text" id="inp_firstname" name="name" required />
+            <label for="inp_lastname" id="lbllast">Last name:</label>
+            <input type="text" id="inp_lastname" name="name" required />
+            <label for="inp_email" id="lblemail">Email:</label>
+            <input type="email" id="inp_email" name="email" required />
+            <label for="inp_phone" id="lblphone">Phone number:</label>
+            <input type="tel" id="inp_phone" name="phone" required />
+            <label for="inp_city" id="lblcity">City:</label>
+            <input type="text" id="inp_city" name="city" required />
+            <label for="inp_date" id="lbldate">Date:</label>
+            <input type="date" id="inp_date" name="date" />
+            <label for="inp_contactpref" id="lblcontact"
+              >Contact method:
+            </label>
+            <div class="contact_checkbox">
+              <span class="contact_checkboxbig">
+                <input type="checkbox" id="inp_check1" name="checkbox" />
+                <label for="inp_check1" id="lblcheck1">By mail</label>
+              </span>
+              <span class="contact_checkboxbig">
+                <input type="checkbox" id="inp_check2" name="checkbox" />
+                <label for="inp_check2" id="lblcheck2">By phone</label>
+              </span>
+            </div>
+            <label for="inp_mess" id="lblmess">Message:</label>
+            <textarea
+              id="inp_mess"
+              rows="10"
+              required
+              placeholder="Enter your message for Zotte Lotte here..."
+            ></textarea>
+          </div>
+          <input
+            id="bttsend"
+            type="submit"
+            value="Send"
+            onclick="alert('Jeeeh, you have send your message to Zotte Lotte!')"
+          />
+        </form>
+        <div class="buttontop">
+          <a href="#top"><img id="topicon" src="Up-icon.png" /></a>
+        </div>
+      </main>
+      <footer>
+        <div class="logo">
+          <a href="https://www.zottelotte.com" target="_blank">
+            <img src="Logo.jpg" alt="Logo" />
+          </a>
+        </div>
+        <p>&copy; 2022 zottelotte.com</p>
+        <div class="tooltip">
+          <a
+            href="https://www.facebook.com/zottekinderentertainment/"
+            target="_blank"
+          >
+            <img src="Facebook.png" alt="Facebook button" />
+            <span class="tooltiptext_top">Go to Facebook</span>
+          </a>
+        </div>
+        <div class="tooltip">
+          <a href="https://www.instagram.com/zottelotte/?hl=nl" target="_blank">
+            <img src="Instagram.png" alt="Instagram button" />
+            <span class="tooltiptext_top" id="tooltip_insta"
+              >Go to Instagram</span
+            >
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

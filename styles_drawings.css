@@ -1,0 +1,104 @@
+.images-grid {
+  display: grid;
+  row-gap: 2rem;
+  grid-template-rows: repeat(5, 1fr);
+  justify-items: center;
+}
+
+.image-cropper {
+  width: 10rem;
+  height: 10rem;
+  overflow: hidden;
+  border: 0.5rem solid #fc6203;
+  background-color: white;
+  border-radius: 50%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.images-grid img {
+  max-width: 8rem;
+  min-height: 8rem;
+  object-fit: cover;
+}
+
+.images-grid img:hover {
+  transform: scale(2);
+}
+
+.image-cropper:hover {
+  overflow: visible;
+}
+
+#img-jump {
+  object-position: 0rem -0.5rem;
+}
+
+#img-baking {
+  max-width: 9rem;
+  min-height: 9rem;
+}
+
+#img-pirate {
+  object-position: 0rem -1.5rem;
+}
+
+#img-princess {
+  object-position: 0rem -1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .images-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    align-items: center;
+    column-gap: 4rem;
+    margin: 3rem 10rem;
+    column-gap: 6rem;
+  }
+
+  .image-cropper {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .images-grid img {
+    max-width: 10rem;
+    min-height: 10rem;
+  }
+
+  #img-baking {
+    max-width: 11rem;
+    min-height: 11rem;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .image-cropper {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .images-grid {
+    margin: 3rem 8rem;
+  }
+
+  .images-grid img {
+    max-width: 12rem;
+    min-height: 12rem;
+  }
+
+  #img-baking {
+    max-width: 13rem;
+    min-height: 13rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .images-grid {
+    margin: 3rem 15rem;
+  }
+}
